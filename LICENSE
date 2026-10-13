@@ -1,0 +1,256 @@
+================================================================================
+                    Intelligent Widget License
+                        (End User License Agreement)
+================================================================================
+
+Copyright (c) 2026 HeheJuice. All rights reserved.
+
+"HeheJuice" refers to the individual(s) operating under this name and
+publishing the Software described below.
+
+This license applies only to the compiled Android application package ("APK")
+and any proprietary assets bundled with it that are created by HeheJuice (the
+"Software"). No source code is distributed or licensed under this license. All
+rights in and to the source code are reserved.
+
+--------------------------------------------------------------------------------
+1. PERMITTED USE
+--------------------------------------------------------------------------------
+
+You may download, install, and use the Software on devices you own or control
+solely for personal, private, and non-commercial purposes.
+
+--------------------------------------------------------------------------------
+2. ELIGIBILITY
+--------------------------------------------------------------------------------
+
+You must be of legal age in your jurisdiction to enter into this license, or
+have obtained verifiable parental or guardian consent.
+
+--------------------------------------------------------------------------------
+3. RESTRICTIONS
+--------------------------------------------------------------------------------
+
+Without explicit, prior written permission (including email or GitHub Issues
+confirmation) from the copyright holder, you are strictly prohibited from:
+
+  * Re-distributing, publishing, hosting, mirroring, sublicensing, selling,
+    renting, leasing, or otherwise making the APK or any part of it available
+    to any third party.
+
+  * Using the Software or any part of it for commercial purposes or
+    monetization.
+
+  * Modifying, reverse engineering, decompiling, disassembling, or creating
+    derivative works of the Software, except to the extent such restrictions
+    are prohibited by applicable law.
+
+  * Extracting, copying, reusing, or redistributing any proprietary code,
+    assets, or resources from the APK.
+
+  * Removing, obscuring, or altering any copyright, license, or attribution
+    notices.
+
+--------------------------------------------------------------------------------
+4. EXCEPTION FOR THIRD-PARTY COMPONENTS
+--------------------------------------------------------------------------------
+
+Notwithstanding the restrictions in Section 3, third-party components listed
+under "Third-Party Component Licenses" may be extracted and used in accordance
+with their respective licenses (Apache License 2.0, SIL Open Font License 1.1).
+The restrictions in this license apply only to proprietary code and assets
+created by HeheJuice.
+
+--------------------------------------------------------------------------------
+5. NO SOURCE CODE RIGHTS
+--------------------------------------------------------------------------------
+
+No source code is provided. Nothing in this license grants any right to obtain,
+access, use, modify, compile, distribute, or create derivative works of the
+source code.
+
+--------------------------------------------------------------------------------
+6. UPDATES
+--------------------------------------------------------------------------------
+
+The Software may check for updates and download new versions from the official
+GitHub Releases page. Downloading and installing such updates is permitted
+under this license. Updates are provided "AS IS" and are subject to the same
+terms.
+
+--------------------------------------------------------------------------------
+7. SECURITY RESEARCH
+--------------------------------------------------------------------------------
+
+Nothing in this license prohibits security research conducted in good faith
+and in accordance with applicable law, provided the results are disclosed
+responsibly to the copyright holder first.
+
+--------------------------------------------------------------------------------
+8. PROHIBITED USES
+--------------------------------------------------------------------------------
+
+You agree not to use the Software for any unlawful purpose or in violation of
+any applicable laws or regulations.
+
+--------------------------------------------------------------------------------
+9. TERMINATION
+--------------------------------------------------------------------------------
+
+This license terminates automatically if you breach any term. Upon termination,
+you must stop using the Software and delete all copies in your possession or
+control to the extent reasonably practicable.
+
+--------------------------------------------------------------------------------
+10. GOVERNING LAW AND JURISDICTION
+--------------------------------------------------------------------------------
+
+This license is governed by and construed in accordance with the laws of the
+Hong Kong Special Administrative Region, without regard to its conflict of law
+principles. Any dispute arising out of or in connection with this license shall
+be subject to the exclusive jurisdiction of the courts of Hong Kong.
+
+If you are a consumer residing in a jurisdiction whose mandatory consumer
+protection laws grant you additional rights, nothing in this license shall
+limit those rights.
+
+--------------------------------------------------------------------------------
+11. SEVERABILITY
+--------------------------------------------------------------------------------
+
+If any provision of this license is held invalid or unenforceable, the
+remaining provisions shall remain in full force and effect.
+
+--------------------------------------------------------------------------------
+12. MODIFICATIONS TO THIS LICENSE
+--------------------------------------------------------------------------------
+
+The copyright holder reserves the right to modify this license for future
+versions of the Software. Continued use of a new version constitutes
+acceptance of the modified terms. The license applicable to a specific version
+of the Software is the version distributed with that APK.
+
+--------------------------------------------------------------------------------
+13. PERMISSION REQUESTS
+--------------------------------------------------------------------------------
+
+To request permission for any use not granted under this license, please
+contact the copyright holder through:
+
+    https://github.com/HeheJuice/Intelligent-Widget/issues
+
+--------------------------------------------------------------------------------
+14. DISCLAIMER
+--------------------------------------------------------------------------------
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM,
+OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+================================================================================
+                     THIRD-PARTY COMPONENT LICENSES
+================================================================================
+
+The APK includes or utilizes third-party components subject to their own
+open-source licenses. Those licenses apply only to their respective components
+and do not grant any rights to HeheJuice's proprietary code or assets.
+
+
+--------------------------------------------------------------------------------
+1. MATERIAL DESIGN LIBRARY (COMPONENTS)
+--------------------------------------------------------------------------------
+
+  Copyright:  Copyright (c) Google LLC. All rights reserved.
+  License:    Apache License 2.0
+  Source:     https://github.com/material-components/material-components-android
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at:
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+
+--------------------------------------------------------------------------------
+2. MATERIAL DESIGN ICONS / SYMBOLS
+--------------------------------------------------------------------------------
+
+  Copyright:  Copyright (c) Google LLC / Material Design Authors.
+  License:    Apache License 2.0 (individual icons)
+              SIL Open Font License 1.1 (font-based icon variants)
+  Source:     https://github.com/google/material-design-icons
+
+  Licensed under the Apache License, Version 2.0 or SIL Open Font License 1.1.
+
+  This software is based on material provided by Google LLC. Portions of this
+  software are derived from Material Design Icons. Copyright 2014 Google LLC.
+
+
+--------------------------------------------------------------------------------
+3. MATERIAL COLOR UTILITIES / MATERIALKOLOR
+--------------------------------------------------------------------------------
+
+  Copyright:  Copyright (c) Google LLC (Material Color Utilities)
+              Copyright (c) Jordon de Hoog (MaterialKolor)
+  License:    Apache License 2.0
+  Sources:    https://github.com/material-foundation/material-color-utilities
+              https://github.com/jordond/materialkolor
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at:
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+
+--------------------------------------------------------------------------------
+4. NOTO SERIF FONTS
+--------------------------------------------------------------------------------
+
+  Copyright:  Copyright (c) Google LLC / Noto Project Authors.
+  License:    SIL Open Font License 1.1
+  Source:     https://fonts.google.com/noto/specimen/Noto+Serif
+
+  The following Noto Serif variants are bundled with the APK:
+
+      noto-serif-default.ttf    (Latin / Greek / Cyrillic)
+      noto-serif-ja.ttf         (Japanese)
+      noto-serif-ko.ttf         (Korean)
+      noto-serif-zh-rCN.ttf     (Simplified Chinese)
+      noto-serif-zh-rTW.ttf     (Traditional Chinese, Taiwan)
+      noto-serif-zh-rHK.ttf     (Traditional Chinese, Hong Kong)
+      noto-serif-yue.ttf        (Cantonese - Traditional)
+      noto-serif-yue-rCN.ttf    (Cantonese - Simplified)
+
+  This Font Software is licensed under the SIL Open Font License, Version 1.1.
+  This license is available with a FAQ at:
+
+      https://openfontlicense.org
+
+  The Font Software may be used, studied, modified, and redistributed freely
+  as long as it is not sold by itself. The Font Software, including any
+  derivative works, may not be released under any other type of license.
+  The requirement for fonts to remain under this license does not apply to
+  any document created using the Font Software.
+
+
+================================================================================
+                              END OF LICENSE
+================================================================================

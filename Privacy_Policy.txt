@@ -1,0 +1,413 @@
+================================================================================
+                           PRIVACY POLICY
+               HeheJuice Intelligent Widget
+================================================================================
+                          Effective Date: October 5, 2026
+================================================================================
+
+[ 1. OUR COMMITMENT TO PRIVACY ]
+================================================================================
+
+The App is built on a "Local-First" principle. We do not collect, transmit, or
+share your personal content. Media metadata, album artwork, battery state,
+Bluetooth connection state, widget preferences, user-selected images, custom
+fonts, app language preferences, and theme settings are processed and stored
+strictly on your local device.
+
+Internet connectivity is used *exclusively* for optional application software
+updates (including signature verification) and for loading the public
+HeheJuice and MiToverG422 avatars shown in the credits screen. It is never
+required for core widget functionality such as displaying media controls,
+battery warnings, Bluetooth suggestions, image widgets, or theme customization.
+
+---
+
+[ 2. LOCAL DATA STORAGE & HANDLING ]
+================================================================================
+
+All data remains within your device's private storage directories:
+
+  * Widget Preferences
+    Theme mode, solid-background toggle, stored light/dark colors, icon colors,
+    and per-widget appearance settings are stored using Android
+    SharedPreferences in:
+    widget_theme_prefs
+
+  * Widget Mode
+    Per-widget mode (Auto / Idle / Music / Image) is stored in:
+    widget_mode_prefs
+
+  * Idle Appearance Preferences
+    Per-widget toggles for the idle gradient background and the bundled Noto
+    Serif font are stored in:
+    widget_idle_gradient_prefs
+    widget_idle_font_prefs
+
+  * Now Playing Metadata
+    Media title, artist, package name, and an active flag may be saved locally
+    in:
+    now_playing_prefs
+
+    This allows the widget to restore the last known media state after a
+    reboot or app restart. Album art bitmaps are processed in memory and are
+    not persisted by the App.
+
+  * Music Mode Cache
+    To support the "Music" widget mode when the player is closed, the App may
+    persist the last-known title, artist, package name, extracted cover colors,
+    and cover/icon PNG copies in:
+    music_mode_cache
+    cacheDir/music_cache_art_square.png
+    cacheDir/music_cache_art_circular.png
+    cacheDir/music_cache_app_icon.png
+
+    This cache is used only to render the Music-mode widget after the media
+    player has been closed. It contains no personal data and can be cleared
+    at any time by clearing the App's data.
+
+  * Battery Warning State
+    Low-battery status and whether the warning was dismissed are stored in:
+    power_low_prefs
+
+    This is used only to show or hide the low-battery widget UI.
+
+  * Bluetooth Suggestion State
+    Whether a Bluetooth audio device (A2DP or Headset profile) is connected
+    and whether the "play music?" suggestion is currently pending are stored
+    in:
+    bluetooth_suggestion_prefs
+
+    This is used to decide whether to display the Bluetooth suggestion card on
+    the 2x2 widget. It is local-only and contains no device identifiers beyond
+    a transient in-memory list of connected device MAC addresses that is
+    discarded when the process ends.
+
+  * Preferred Music App
+    If you select "Always" in the music app picker, the package name and
+    display label of the chosen app are stored in:
+    music_launch_prefs
+
+    This lets the App skip the picker on subsequent Bluetooth triggers. You
+    can reset this at any time from the App's "Reset music app preference"
+    option.
+
+  * Preferred Image Viewer App
+    If you select "Always" in the image viewer picker (shown when tapping an
+    Image Widget), the package name and display label of the chosen image
+    viewer app are stored in:
+    image_launch_prefs
+
+    You can reset this at any time from the App's "Reset gallery app
+    preference" option.
+
+  * Image Widget Content
+    When you use the Image Widget feature, the image you select is copied into
+    the App's private storage directory and referenced by widget ID:
+    filesDir/widget_images/widget_<id>.png
+
+    A copy of any custom font (.ttf / .otf) you select is stored in:
+    filesDir/widget_fonts/widget_<id>.ttf
+
+    The original image or font file on your device is never modified or
+    deleted. The following per-widget settings are stored in SharedPreferences:
+    widget_text_prefs
+
+      - user_text_<id>       Text to display on the widget
+      - font_name_<id>       Display name of the selected font file
+      - image_date_<id>      EXIF or MediaStore timestamp of the image
+      - date_display_<id>    Whether to show the image date under the text
+      - launch_on_tap_<id>   Whether tapping the widget opens the image
+
+    All of this data lives in your device's private App storage and can be
+    removed at any time by deleting the image or font from within the App, or
+    by clearing the App's data.
+
+  * App-Level Preferences
+    Onboarding state (whether the welcome screen has been acknowledged) and
+    whether the device-requirement dialog has been shown are stored in:
+    app_prefs
+
+  * App Language Preference
+    If you select a specific display language from the App's language picker
+    (for example English, Japanese, Korean, Traditional Chinese - Hong Kong /
+    Taiwan, Simplified Chinese, Cantonese, or Cantonese - Simplified), the
+    chosen language tag is stored by the AndroidX AppCompat library in its
+    internal per-app locale record:
+    shared_prefs/androidx.appcompat.app.AppCompatDelegate.application_locales_record_file.xml
+
+    This is required to restore the language on the next launch. If you select
+    "Follow system", this record is cleared.
+
+  * Tangent Developer Test Preferences
+    The Tangent developer test tool (only present in Beta builds signed with
+    the official certificate) stores test-only settings in:
+    tangent_test_prefs
+
+    This includes whether the tool is enabled, a simulated time-of-day for
+    gradient testing, and whether to spoof battery-low or charging state for
+    UI testing. These settings are entirely local and affect the App's own
+    widget rendering only.
+
+  * Cached Update Files
+    Downloaded update packages are stored temporarily in:
+    cacheDir/app-release.apk
+
+    This file is used only for user-initiated installation of an update and
+    can be cleared by the system or by clearing the App's cache.
+
+  * Cached GitHub Avatars
+    Public GitHub avatars for the credits screen are cached locally in:
+    cacheDir/hehejuice_avatar.png
+    cacheDir/mitover_avatar.png
+    cacheDir/material_components_avatar.png
+    cacheDir/google_avatar.png
+    cacheDir/noto_avatar.png
+
+    These are used only for the credits section of the "Updates & About"
+    screen.
+
+  * Media Metadata Processing
+    The App reads media notifications and active media sessions locally. It
+    extracts media title, artist, album, duration, playback state, album
+    artwork, and the app's package name. Album artwork is used in memory to
+    generate widget colors and cropped images. Only title, artist, package
+    name, and an active flag may be saved to SharedPreferences.
+
+  * Bundled Fonts
+    The App includes Noto Serif font files in its APK (for Japanese, Korean,
+    Simplified Chinese, Traditional Chinese - Taiwan, Traditional Chinese -
+    Hong Kong, Cantonese - Traditional, Cantonese - Simplified, and a default
+    variant). The App reads your device's system locale to choose which
+    bundled variant to use. No font data is downloaded or transmitted; locale
+    information is used locally only.
+
+  * App Icon & Name Lookup
+    For the currently playing media app, the App reads the app name, icon, and
+    launch intent through Android's PackageManager. This is processed locally
+    and is never transmitted.
+
+  * System Device Details
+    When you open the "Device details" screen, the App reads:
+      - Android system properties (ro.build.version.oneui)
+      - Build.MODEL / Build.MANUFACTURER
+      - Samsung floating feature flags from /system/etc/floating_feature.xml
+        (read-only; specifically the 3D-surface-transition graphics flag and
+        the brand-name configuration)
+      - Resolved package names for calendar, weather, clock, news, browser,
+        gallery, and default launcher
+      - Previously stored preferred music and image-viewer app packages
+
+    All of this information is displayed only on-screen and can be copied to
+    your clipboard at your request. It is never transmitted anywhere.
+
+---
+
+[ 3. NETWORK ACCESS & APP UPDATES ]
+================================================================================
+
+  * Purpose of Internet Permission
+    The App connects to the internet solely to check for, verify, and download
+    application update packages from the project's GitHub Releases page
+    (api.github.com and github.com), and to load public GitHub avatars. No
+    other network requests are made.
+
+  * Complete User Control
+    Network access is entirely optional. You can disable internet permissions
+    for the App at any time via your device settings, or use the App
+    completely offline without affecting widget display, media controls,
+    battery warnings, Bluetooth suggestions, image widgets, or local theme
+    settings.
+
+  * Zero Personal Data Transmitted
+    Update checks send only standard version-related requests. Your media
+    metadata, playback history, widget preferences, battery state, Bluetooth
+    connection state, user-selected images, custom fonts, app language
+    preference, and personal data are never transmitted to any server.
+
+  * Signature Verification
+    Before checking for updates, the App verifies its own digital signature
+    against the official release certificate SHA-256:
+    bbd053c0a67dbfc7938a3086d13325bfa212d550d6e6cbf39e48edf6b52bfc0d
+    This ensures you are running an authentic, untampered version. If the
+    signature does not match, update checking is automatically disabled and an
+    appropriate message is displayed. This verification occurs entirely on
+    your device and does not transmit any data.
+
+  * Third-Party Network Services
+    Update checks, APK downloads, and avatar loading connect to GitHub. As
+    with any HTTPS request, GitHub may receive standard connection information
+    such as your IP address and user agent, subject to GitHub's privacy policy.
+
+---
+
+[ 4. DATA TRANSMISSION & THIRD-PARTY ACCESS ]
+================================================================================
+
+  * No Sharing
+    Your media metadata, widget settings, theme colors, battery state,
+    Bluetooth connection state, user-selected images, custom fonts, and
+    notification-derived data never leave your physical device.
+
+  * No Analytics or Tracking
+    The App contains no third-party tracking SDKs, advertising networks, or
+    behavioral telemetry services. We do not monitor how you use the App.
+
+  * No Advertising
+    The App does not display ads and does not use advertising identifiers.
+
+  * Third-Party Libraries
+    The App uses the open-source Material Color Utilities library
+    (com.materialkolor) to generate dynamic color palettes. This library runs
+    entirely offline and performs no network operations.
+
+  * Third-Party Links
+    The App may open GitHub links or Android system settings. When you tap
+    these links, the corresponding external app or browser handles the
+    request. Their own privacy policies apply.
+
+---
+
+[ 5. DEVICE PERMISSIONS & SYSTEM INTEGRATION ]
+================================================================================
+
+The App requests native Android permissions and special access only when
+strictly necessary:
+
+  * Notification Listener Access
+    Required for the widget to read media playback notifications and active
+    media sessions. The App filters for media transport notifications only
+    (category TRANSPORT). It does not read messages, emails, or other
+    non-media notifications. Media title, artist, album art, and playback
+    state are processed locally to render the widget. You can revoke this
+    access at any time in Android Settings. If revoked, the widget shows a
+    permission prompt instead of media controls.
+
+  * Bluetooth Permissions
+    BLUETOOTH_CONNECT, BLUETOOTH_SCAN, and BLUETOOTH_ADVERTISE are requested
+    to detect when an audio device (A2DP or Headset profile) connects or
+    disconnects. This powers the Bluetooth "play music?" suggestion shown on
+    the 2x2 widget when no music is currently playing. Connected device MAC
+    addresses are held in memory only and are never persisted or transmitted.
+
+  * Internet Access
+    Used exclusively for optional update checks, APK downloads, signature
+    verification, and GitHub avatar loading. Can be restricted or disabled
+    without breaking offline core functionality.
+
+  * Install Unknown Apps / Request Install Packages
+    Used only when you choose to download and install an update. The App
+    shares the downloaded APK with the system package installer via
+    FileProvider. Installation always requires your explicit confirmation.
+
+  * Battery Optimization Exemption
+    REQUEST_IGNORE_BATTERY_OPTIMIZATIONS may be requested to keep the widget
+    responsive in the background. This is entirely optional and can be denied
+    or revoked at any time from Android Settings. The App does not require
+    this exemption to function.
+
+  * Read Media Images
+    READ_MEDIA_IMAGES (Android 13+) is requested only if you use the Image
+    Widget feature to select a picture from your device's photo library. The
+    App reads only the single image file you choose and copies it into its
+    own private storage; it does not scan, index, or transmit your photo
+    library. You can revoke this permission at any time; doing so simply
+    disables the "select image" action.
+
+  * Do Not Disturb Access
+    ACCESS_NOTIFICATION_POLICY is used only to allow the widget's "Modes"
+    idle action to toggle Do Not Disturb at your explicit request. You can
+    revoke this access at any time from Android Settings.
+
+  * Notification Permission Not Used
+    The App does not post notifications and therefore does not request the
+    POST_NOTIFICATIONS permission.
+
+  * Package Manager / App Visibility
+    Used to read the name, icon, and launch intent of the currently playing
+    media app so the widget can display and open it. Also used to enumerate
+    installed music apps for the music picker dialog, installed image picker
+    and viewer apps for the Image Widget flow, and to detect the current
+    default launcher. All of this is local-only.
+
+  * Battery Information
+    Used to read battery percentage and charging status via BatteryManager.
+    This powers the low-battery warning and the idle-mode charging indicator.
+    It is local-only and never transmitted.
+
+  * System Broadcasts
+    The App listens for the following system-wide broadcasts to keep the
+    widget current:
+      - ACTION_BATTERY_CHANGED     (low-battery / charging indicator)
+      - ACTION_WALLPAPER_CHANGED   (refresh widget colors)
+      - ACTION_TIME_CHANGED, ACTION_TIMEZONE_CHANGED, ACTION_DATE_CHANGED
+                                   (refresh time-based idle messages)
+      - ACTION_INTERRUPTION_FILTER_CHANGED
+                                   (refresh when Do Not Disturb state changes)
+      - BluetoothA2dp / BluetoothHeadset connection state changes
+                                   (Bluetooth suggestion feature)
+      - ACTION_CONFIGURATION_CHANGED
+                                   (refresh widget when system config changes)
+    None of these broadcasts carry personal data, and the App does not
+    subscribe to any broadcast that would expose messages, calls, or other
+    user content.
+
+  * External Links
+    Used only when you manually open GitHub or system settings from the App.
+
+  * No Other Sensitive Access
+    The App does not request camera, microphone, contacts, location, calendar,
+    SMS, call logs, or broad storage access. It reads album art only when a
+    media session provides a local content:// or file:// URI. It reads a
+    single user-selected image only through the Android photo picker or
+    system file picker, never by scanning your photo library.
+
+---
+
+[ 6. DATA RETENTION & DELETION ]
+================================================================================
+
+  * User Control
+    You may remove widgets, revoke notification, Bluetooth, Do Not Disturb,
+    or media-image access, clear the App's cache, reset the preferred music
+    app, reset the preferred image viewer app, or clear all App data at any
+    time through Android System Settings or the App's own settings.
+
+  * Permanent Deletion
+    Clearing App data or uninstalling the App permanently removes all stored
+    preferences, cached APK files, cached avatar images, saved media metadata,
+    user-selected image copies, and copied custom font files from your device.
+
+  * Widget Removal
+    Deleting a widget clears its per-widget theme, background style, idle
+    gradient, idle font, widget mode, Bluetooth suggestion preferences, and
+    any stored image copy, custom font copy, custom text, and tap-to-view
+    settings.
+
+  * No Server-Side Data
+    The App does not create accounts, does not upload user data, and does not
+    maintain any server-side profile or backup.
+
+---
+
+[ 7. CHANGES TO THIS POLICY ]
+================================================================================
+
+This Privacy Policy may be updated periodically to reflect software
+improvements or functional updates. Revisions will be versioned alongside app
+releases.
+
+---
+
+[ 8. CONTACT INFORMATION ]
+================================================================================
+
+If you have questions regarding this Privacy Policy or how your local data is
+handled, please reach out through:
+
+  * GitHub Issues:
+    https://github.com/HeheJuice/Intelligent-Widget/issues
+
+
+================================================================================
+                              END OF POLICY
+================================================================================
