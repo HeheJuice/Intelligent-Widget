@@ -2,19 +2,19 @@
 
 ---
 
+<div align="center">
+
+<img src="res/icon.png" width="128" height="128" alt="Logo" />
+
 # Intelligent Widget
+
+[![GitHub Downloads](https://img.shields.io/github/downloads/HeheJuice/Intelligent-Widget/total?color=blue&label=Downloads+from+GitHub&style=for-the-badge)](https://github.com/HeheJuice/Intelligent-Widget/releases)
 
 > For `One UI 7 and newer`
 
 > A `Widget` that adapts to your needs
 
-## Compatibility
-
-> `One UI 7 or newer`
-
-> `One UI Home` is `required`
-
-> `Blur Widget Background` requires a `flagship Galaxy device`
+</div>
 
 ## Features
 
@@ -42,6 +42,24 @@
 
 > 2×2, 4×2
 
+
+## Screenshots
+
+<p align="center">
+  <a href="res/screenshots/SS1.jpg"><img src="res/screenshots/SS1.jpg" width="22%" alt="Screenshot 1"></a>
+  <a href="res/screenshots/SS2.jpg"><img src="res/screenshots/SS2.jpg" width="22%" alt="Screenshot 2"></a>
+  <a href="res/screenshots/SS3.jpg"><img src="res/screenshots/SS3.jpg" width="22%" alt="Screenshot 3"></a>
+  <a href="res/screenshots/SS4.jpg"><img src="res/screenshots/SS4.jpg" width="22%" alt="Screenshot 4"></a>
+</p>
+
+<p align="center">
+  <a href="res/screenshots/SS5.jpg"><img src="res/screenshots/SS5.jpg" width="22%" alt="Screenshot 5"></a>
+  <a href="res/screenshots/SS6.jpg"><img src="res/screenshots/SS6.jpg" width="22%" alt="Screenshot 6"></a>
+  <a href="res/screenshots/SS7.jpg"><img src="res/screenshots/SS7.jpg" width="22%" alt="Screenshot 7"></a>
+  <a href="res/screenshots/SS8.jpg"><img src="res/screenshots/SS8.jpg" width="22%" alt="Screenshot 8"></a>
+</p>
+
+
 ## Downloads
 
 Download the latest APK from the [Releases page](https://github.com/HeheJuice/Intelligent-Widget/releases).
@@ -53,6 +71,10 @@ The app is distributed as a compiled APK only. No source code is provided.
 > [License (EULA)](LICENSE)
 >
 > [Privacy Policy](Privacy_Policy.txt)
+
+> [!NOTE]
+> You must agree to and comply with these terms when using or forwarding this content.
+
 
 ## Acknowledgments
 
@@ -115,3 +137,6 @@ The app is distributed as a compiled APK only. No source code is provided.
     </tr>
   </tbody>
 </table>
+
+## Join Us
+[![Telegram](https://img.shields.io/badge/Telegram-Channel-26A5E4?logo=Telegram&style=for-the-badge)](https://t.me/channelhehejuice)[![Chat](https://img.shields.io/badge/Telegram-Chat-26A5E4?logo=Telegram&style=for-the-badge)](https://t.me/sechehe)

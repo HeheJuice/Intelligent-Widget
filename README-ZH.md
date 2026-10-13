@@ -1,20 +1,20 @@
 [English](README.md) · **繁體中文**
 
 ---
+<div align="center">
+
+<img src="res/icon.png" width="128" height="128" alt="Logo" />
 
 # 智能小工具
+
+[![GitHub Downloads](https://img.shields.io/github/downloads/HeheJuice/Intelligent-Widget/total?color=blue&label=總下載&style=for-the-badge)](https://github.com/HeheJuice/Intelligent-Widget/releases)
 
 > 適用於 `One UI 7 或更新版本`
 
 > 一個隨你所需而變化的小工具
 
-## 兼容性
+</div>
 
-> `One UI 7 或更新版本`
-
-> 必須使用 `One UI Home`
-
-> 「模糊背景」需要 `旗艦級 Galaxy 裝置`
 
 ## 功能
 
@@ -42,6 +42,23 @@
 
 > 2×2、4×2
 
+## 螢幕截圖
+
+<p align="center">
+  <a href="res/screenshots/SS1.jpg"><img src="res/screenshots/SS1.jpg" width="22%" alt="Screenshot 1"></a>
+  <a href="res/screenshots/SS2.jpg"><img src="res/screenshots/SS2.jpg" width="22%" alt="Screenshot 2"></a>
+  <a href="res/screenshots/SS3.jpg"><img src="res/screenshots/SS3.jpg" width="22%" alt="Screenshot 3"></a>
+  <a href="res/screenshots/SS4.jpg"><img src="res/screenshots/SS4.jpg" width="22%" alt="Screenshot 4"></a>
+</p>
+
+<p align="center">
+  <a href="res/screenshots/SS5.jpg"><img src="res/screenshots/SS5.jpg" width="22%" alt="Screenshot 5"></a>
+  <a href="res/screenshots/SS6.jpg"><img src="res/screenshots/SS6.jpg" width="22%" alt="Screenshot 6"></a>
+  <a href="res/screenshots/SS7.jpg"><img src="res/screenshots/SS7.jpg" width="22%" alt="Screenshot 7"></a>
+  <a href="res/screenshots/SS8.jpg"><img src="res/screenshots/SS8.jpg" width="22%" alt="Screenshot 8"></a>
+</p>
+
+
 ## 下載
 
 請前往 [Releases 頁面](https://github.com/HeheJuice/Intelligent-Widget/releases) 下載最新 APK。
@@ -53,6 +70,10 @@
 > [授權條款（EULA）](LICENSE)
 >
 > [私隱政策](Privacy_Policy.txt)
+
+
+> [!NOTE]
+> 在使用或者轉發過程中必須同意並遵守
 
 ## 致謝
 
@@ -115,3 +136,6 @@
     </tr>
   </tbody>
 </table>
+
+## 和我們聊聊天吧
+[![Telegram](https://img.shields.io/badge/Telegram-Channel-26A5E4?logo=Telegram&style=for-the-badge)](https://t.me/channelhehejuice)[![Chat](https://img.shields.io/badge/Telegram-Chat-26A5E4?logo=Telegram&style=for-the-badge)](https://t.me/sechehe)
